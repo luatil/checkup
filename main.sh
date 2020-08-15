@@ -14,8 +14,10 @@ prune_versions() {
 }
 
 get_sites() {
-    for i in {1..$number_of_sites};
-    do curl $(sed "${i}p;d" list_of_sites) > site$i-$(date +%Y_%m_%d_%H_%M_%S);
+    for i in {1..3};
+    do 
+        echo $i
+        curl $(sed "${i}p;d" list_of_sites) > site$i-$(date +%Y_%m_%d_%H_%M_%S);
     done
 }
 
