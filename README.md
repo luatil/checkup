@@ -16,3 +16,5 @@ Then run the following command:
 In case the 2nd page got some update, you will have:
     
 The site:  https://teachyourselfcs.com/ has been updated
+
+TODO: Switch curl command to just get the last-modified field
